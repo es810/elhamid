@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="شركة الحمد - مبيعات دواجن مميزة وإنشاء مزارع زراعية عالية التقنية." id="meta-description">
+  <title id="page-title">شركة الحمد | دواجن مميزة ومزارع زراعية</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" data-i18n-aria="nav.ariaLogo">
+        <span class="nav__logo-text">El Hamed</span>
+        <span class="nav__logo-tagline">Company</span>
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="#services" class="nav__link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="#features" class="nav__link" data-i18n="nav.features">المميزات</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav.contact">اتصل بنا</a></li>
+      </ul>
+      <div class="nav__right">
+        <button type="button" class="lang-switcher" id="lang-switcher" aria-label="Switch language">
+          <span class="lang-switcher__opt lang-switcher__opt--en">EN</span>
+          <span class="lang-switcher__sep">|</span>
+          <span class="lang-switcher__opt lang-switcher__opt--ar">عربي</span>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" data-i18n-aria="nav.ariaToggle" aria-expanded="false">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="hero-new.png" alt="" data-i18n-alt="hero.imgAlt" class="hero__img" fetchpriority="high">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content container">
+        <p class="hero__label" data-i18n="hero.label">حلول دواجن ومزارع مميزة</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line" data-i18n="hero.title1">الحمد</span>
+          <span class="hero__title-line hero__title-line--accent" data-i18n="hero.title2">التميز في صناعة الدواجن</span>
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          الدواجن المميزة و إنشاء المزارع بأحدث التقنيات — الحمد يقدم الجودة والابتكار للتربية الحديثة.
+        </p>
+        <div class="hero__cta">
+          <a href="#services" class="btn btn--primary" data-i18n="hero.ctaServices">خدماتنا</a>
+          <a href="#contact" class="btn btn--outline" data-i18n="hero.ctaContact">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text" data-i18n="hero.scroll">تمرير</span>
+        <span class="hero__scroll-icon"></span>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section__title" data-i18n="section.whatWeOffer">ما نقدمه</h2>
+        <p class="section__subtitle" data-i18n="section.subtitlePillars">ركيزة  للتميز الزراعي</p>
+        <div class="services__grid">
+          <article class="service-card service-card--poultry" data-animate>
+            <div class="service-card__img-wrap">
+              <img src="poultry-card-new.png" alt="" data-i18n-alt="poultry.imgAlt" class="service-card__img">
+              <div class="service-card__overlay"></div>
+            </div>
+            <div class="service-card__content">
+              <h3 class="service-card__title" data-i18n="poultry.title">مبيعات الدواجن</h3>
+              <p class="service-card__text" data-i18n="poultry.text">
+                نورد الدجاح للمزارع و المؤسسسات بأعلى المستويات وفق معاير و جودة صارمة
+              </p>
+              <a href="#poultry-modal" class="btn btn--card" data-modal-trigger="poultry-modal" data-i18n="poultry.learnMore">اعرف المزيد</a>
+            </div>
+          </article>
+          <article class="service-card service-card--construction" data-animate>
+            <div class="service-card__img-wrap">
+              <img src="construction-card-2.png" alt="" data-i18n-alt="construction.imgAlt" class="service-card__img">
+              <div class="service-card__overlay"></div>
+            </div>
+            <div class="service-card__content">
+              <h3 class="service-card__title" data-i18n="construction.title">إنشاء المزارع</h3>
+              <p class="service-card__text" data-i18n="construction.text">
+                تصميم شبكات الري عالية الجودة بأفضل خامات
+              </p>
+              <a href="#construction-modal" class="btn btn--card" data-modal-trigger="construction-modal" data-i18n="construction.learnMore">اعرف المزيد</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poultry Sales Details Modal -->
+    <section class="modal" id="poultry-modal" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close="poultry-modal"></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="poultry-modal-title">
+        <button class="modal__close" type="button" data-i18n-aria="modal.closeAria" data-modal-close="poultry-modal">&times;</button>
+        <h2 class="modal__title" id="poultry-modal-title" data-i18n="modal.title">تفاصيل مبيعات الدواجن</h2>
+        <p class="modal__subtitle" data-i18n="modal.subtitle">دجاج هاي لاين ولوهمان، وبطاريات عالية السعة لمزرعتك.</p>
+        <div class="modal__grid">
+          <div class="modal__section">
+            <h3 class="modal__heading" data-i18n="modal.typesHeading">أنواع الدجاج والأسعار</h3>
+            <ul class="modal__list">
+              <li data-i18n-html="modal.types1"></li>
+              <li data-i18n-html="modal.types2"></li>
+              <li data-i18n-html="modal.types3"></li>
+              <li data-i18n-html="modal.types4"></li>
+            </ul>
+          </div>
+          <div class="modal__section">
+            <h3 class="modal__heading" data-i18n="modal.batteryHeading">أنظمة البطاريات</h3>
+            <ul class="modal__list">
+              <li data-i18n-html="modal.battery1"></li>
+              <li data-i18n-html="modal.battery2"></li>
+              <li data-i18n-html="modal.battery3"></li>
+              <li data-i18n-html="modal.battery4"></li>
+              <li data-i18n-html="modal.battery5"></li>
+              <li data-i18n-html="modal.battery6"></li>
+            </ul>
+            <div class="modal__breeding-grid">
+              <figure class="modal__breeding-img">
+                <img src="battery-1.png" alt="" class="modal__breeding-img-el">
+              </figure>
+              <figure class="modal__breeding-img">
+                <img src="battery-2.png" alt="" class="modal__breeding-img-el">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <h3 class="modal__heading modal__heading--block">تجهيز مزارع البياض</h3>
+        <div class="modal__breeding-grid">
+          <figure class="modal__breeding-img">
+            <img src="WhatsApp%20Image%202026-03-25%20at%2011.26.37%20PM.jpeg" alt="" class="modal__breeding-img-el">
+          </figure>
+          <figure class="modal__breeding-img">
+            <img src="WhatsApp%20Image%202026-03-26%20at%209.34.01%20PM.jpeg" alt="" class="modal__breeding-img-el">
+          </figure>
+          <figure class="modal__breeding-img">
+            <video src="WhatsApp Video 2026-04-13 at 6.13.23 PM.mp4" class="modal__breeding-img-el" controls></video>
+          </figure>
+        </div>
+        <ul class="modal__list modal__list--bullets">
+          <li>شفطاط</li>
+          <li>خلايا تبريد</li>
+          <li>لوح تحكم</li>
+          <li>بطاريات للتربية</li>
+          <li>هيتار تدفية</li>
+        </ul>
+        <div class="modal__cta">
+          <a href="https://wa.me/201127899945" class="btn btn--primary" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Farm Construction Details Modal -->
+    <section class="modal" id="construction-modal" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close="construction-modal"></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="construction-modal-title">
+        <button class="modal__close" type="button" data-i18n-aria="constructionModal.closeAria" data-modal-close="construction-modal">&times;</button>
+        <h2 class="modal__title" id="construction-modal-title" data-i18n="constructionModal.title">تفاصيل إنشاء المزارع</h2>
+        <p class="modal__subtitle" data-i18n="constructionModal.subtitle">خدمات إضافية لإنشاء وتجهيز المزارع</p>
+        <div class="modal__grid modal__grid--single">
+          <div class="modal__section modal__section--full">
+            <ul class="modal__list modal__list--points">
+              <li class="modal__point">
+                <figure class="modal__point-img modal__point-imgs--4">
+                  <img src="WhatsApp%20Image%202026-03-18%20at%204.41.05%20PM.jpeg" alt="" class="modal__point-img-el">
+                  <img src="WhatsApp%20Image%202026-03-18%20at%204.41.06%20PM%20(1).jpeg" alt="" class="modal__point-img-el">
+                  <img src="WhatsApp%20Image%202026-03-18%20at%204.41.06%20PM%20(2).jpeg" alt="" class="modal__point-img-el">
+                  <img src="WhatsApp%20Image%202026-03-18%20at%204.41.06%20PM.jpeg" alt="" class="modal__point-img-el">
+                  <figcaption class="modal__point-caption" data-i18n="constructionModal.irrigationCaption">شبكات الري</figcaption>
+                </figure>
+                <div class="modal__point-text" data-i18n="constructionModal.irrigation"></div>
+              </li>
+              <li class="modal__point">
+                <figure class="modal__point-img">
+                  <img src="farm-photo-1.png" alt="" class="modal__point-img-el">
+                  <figcaption class="modal__point-caption" data-i18n="constructionModal.solarCaption">الطاقة الشمسية</figcaption>
+                </figure>
+                <div class="modal__point-text" data-i18n="constructionModal.solar"></div>
+              </li>
+              <li class="modal__point">
+                <figure class="modal__point-img">
+                  <img src="labor-card.png" alt="" class="modal__point-img-el">
+                  <figcaption class="modal__point-caption" data-i18n="constructionModal.laborCaption">اليد العاملة</figcaption>
+                </figure>
+                <div class="modal__point-text" data-i18n="constructionModal.labor"></div>
+              </li>
+            </ul>
+            <div class="modal__cta">
+              <a href="https://wa.me/201127899945" class="btn btn--primary" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section__title" data-i18n="features.title">لماذا تختار الحمد</h2>
+        <p class="section__subtitle" data-i18n="features.subtitle">قائم على الخبرة والثقة</p>
+        <div class="features__grid">
+          <article class="feature-card" data-animate>
+            <div class="feature-card__icon-wrap feature-card__icon-wrap--biosecurity">
+              <svg class="feature-card__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="feature.biosecurity.title">الأمان الحيوي</h3>
+            <p class="feature-card__text" data-i18n="feature.biosecurity.text">
+              بروتوكولات صحية صارمة وبيئات خاضعة للرقابة لضمان دواجن ومنشآت آمنة وخالية من الأمراض.
+            </p>
+          </article>
+          <article class="feature-card" data-animate>
+            <div class="feature-card__icon-wrap feature-card__icon-wrap--engineering">
+              <svg class="feature-card__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="feature.engineering.title">هندسة خبراء</h3>
+            <p class="feature-card__text" data-i18n="feature.engineering.text">
+              يصمم فريقنا المزارع ويبنيها بدقة — مع مراعاة التهوية والاعتمادية والقابلية للتوسع.
+            </p>
+          </article>
+          <article class="feature-card" data-animate>
+            <div class="feature-card__icon-wrap feature-card__icon-wrap--support">
+              <svg class="feature-card__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" data-i18n="feature.support.title">دعم على مدار الساعة</h3>
+            <p class="feature-card__text" data-i18n="feature.support.text">
+              من التركيب إلى التشغيل، نحن معك على مدار الساعة لإبقاء مزرعتك تعمل بسلاسة. حتى بعد الانشاء الخدمة على مدار الساعة.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="contact" id="contact">
+      <div class="contact__bg">
+        <img src="farm-photo-2.png" alt="" class="contact__img" aria-hidden="true">
+        <div class="contact__overlay"></div>
+      </div>
+      <div class="contact__content container">
+        <h2 class="section__title section__title--light" data-i18n="contact.title">مستعد للنمو معنا؟</h2>
+        <p class="contact__text" data-i18n="contact.text">
+          سواء كنت تحتاج دواجن مميزة أو مزرعة جديدة عالية التقنية — تواصل معنا مباشرة عبر واتساب.
+        </p>
+        <a href="https://wa.me/201127899945" class="btn btn--primary btn--large" data-i18n="contact.cta">تواصل عبر واتساب</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">El Hamed</span>
+        <span class="footer__tagline">Company</span>
+        <p class="footer__desc" data-i18n="footer.desc">مبيعات دواجن مميزة وإنشاء مزارع زراعية عالية التقنية.</p>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading" data-i18n="footer.quickLinks">روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+          <li><a href="#features" data-i18n="nav.features">المميزات</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading" data-i18n="footer.services">الخدمات</h4>
+        <ul>
+          <li><a href="#services" data-i18n="poultry.title">مبيعات الدواجن</a></li>
+          <li><a href="#services" data-i18n="construction.title">إنشاء المزارع</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__heading" data-i18n="footer.contact">اتصل بنا</h4>
+        <p><a href="https://wa.me/201127899945">+20 112 789 9945</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">&copy; <span id="year"></span> <span data-i18n="footer.copyright">شركة الحمد. جميع الحقوق محفوظة.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
